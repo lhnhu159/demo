@@ -1,0 +1,14 @@
+@import "./color";
+@import "./variables";
+%button{
+    background-color:$primary-color;
+    border:none;
+    padding:0.6rem 2rem;
+    cursor: pointer;
+    font-family: $title-font;
+    font-weight: 600;
+    &:hover{
+        background-color: $secondary-color;
+        color:black;
+    }
+}

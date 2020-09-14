@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fab1fa064a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function (){
+            $("#icon").click(function (){
+                $("ul").toggleClass('show');
+                $("#hide-menu").toggleClass('showmn');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <nav>
+                            <ul class="social">
+                                <li>FOLLOW US</li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-tripadvisor"></i></a></li>
+                            </ul>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-12">
+                        <nav>
+                            <ul class="book-now">
+                                <li>RESERVATIONS + 1-444-123-459</li>
+                                <li></li>
+                                <li><i class="far fa-calendar-alt"></i> BOOK NOW </li>
+                                <li><i class="fas fa-bars"></i></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-auto col-md-12 col-sm-12 col-12">
+                        <img src="./img/landing-logo.png" alt="">
+                        <label for="" id="icon">
+                            <i class="fas fa-bars" id="show-menu"></i>
+                            <i class="fas fa-times" id="hide-menu"></i>
+                        </label>
+                    </div>
+                    <div class="col-lg col-md-12 col-sm-12 col-12">  
+                        <nav class="menu-home">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">Reservations</a></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">Menu</a></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><i class="fas fa-star"></i></li>
+                                <li><a href="#">Elements</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-auto col-md-8 col-sm-8 col-8">
+                        <div class="search">
+                            <form>
+                                <input type="text" placeholder="Search.." size="15" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-lg col-md-4 col-sm-4 col-4 mycart">
+                        <span class="cart"> Cart <i class="fas fa-shopping-cart"></i></span>
+                        <span class="badge-cart">0</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-beef">
+            <div id="burger" class="carousel slide" data-ride="carousel">
+                <div class="container">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-12">
+                                    <img src="./img/beef.png" alt="" class="beef-img">
+                                    <h1>KNOW YOUR FOOD</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit,
+                                        set do eiusmod tempor incididunt.
+                                    </p>
+                                    <div><button>PURCHASE</button></div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-12">
+                                    <img src="./img/home-1-slide-1-graphic-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-12">
+                                    <img src="./img/beef.png" alt="" class="beef-img">
+                                    <h1>KNOW YOUR FOOD</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit,
+                                        set do eiusmod tempor incididunt.
+                                    </p>
+                                    <div><button>PURCHASE</button></div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-12">
+                                    <img src="./img/home-1-slide-1-graphic-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-12">
+                                    <img src="./img/beef.png" alt="" class="beef-img">
+                                    <h1>KNOW YOUR FOOD</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipscing elit,
+                                        set do eiusmod tempor incididunt.
+                                    </p>
+                                    <div><button>PURCHASE</button></div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-12">
+                                    <img src="./img/home-1-slide-1-graphic-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#burger" role="button" data-slide="prev">
+                    <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#burger" role="button" data-slide="next">
+                    <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+            </div>
+
+        </section>
+    </header>
+    <section class="food-taste">
+        <div class="food-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <img src="./img/img-1.png" alt="">
+                        <h4>DELICIOUS FOOD</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqe
+                            laudantium,
+                            totam rem aperiam.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <img src="./img/img-2.png" alt="">
+                        <h4>FOR EVERY TASTE</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqe
+                            laudantium,
+                            totam rem aperiam.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-12">
+                        <img src="./img/img-3.png" alt="">
+                        <h4>THE REAL BURGERS</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqe
+                            laudantium,
+                            totam rem aperiam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="art-galleyry">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-auto col-sm-auto col-12">
+                        <h3>Art Gallery</h3>
+                    </div>
+                    <div class="col-md-auto col-sm-12 col-12">
+                        <nav>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-mug-hot"></i> Food & Drinks</a></li>
+                                <li><a href="#"><i class="fas fa-mug-hot"></i> Interior</a></li>
+                                <li><a href="#"><i class="fas fa-gift"></i> Deserts</a></li>
+                                <li><a href="#"><i class="far fa-sticky-note"></i> Recipes</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md text-right">
+                        <button><i class="far fa-hand-point-right"></i> SEE FULL GALLERY</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="img-gall">
+            <div class="row">
+                <div class="col-md col-sm-12 col-12"><img src="./img/Carne-Asada-Tacos.jpg" alt=""></div>
+                <div class="col-md col-sm-12 col-12"><img src="./img/Mango-Chile-Chutney.jpg" alt=""></div>
+                <div class="col-md col-sm-12 col-12"><img src="./img/A-Treat-For-Your-Taste-Buds.jpg" alt=""></div>
+                <div class="col-md col-sm-12 col-12"><img src="./img/img-4.png" alt=""></div>
+                <div class="col-md col-sm-12 col-12"><img src="./img/img-5.png" alt=""></div>
+            </div>
+        </section>
+        <section class="welcome">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12 weltopi">
+                        <h3>WELCOME TO PIQUANT</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <button>READ MORE</button>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12 welcimg">
+                        <img src="./img/home-1-image-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slide-card">
+            <div id="newcard" class="carousel slide" data-ride="carousel">
+                <div class="container">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-12 item-1">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-1a.jpg" alt="">
+                                        <p class="new">NEW</p>
+                                        <div class="price">
+                                            <span class="price-num">$14</span>
+                                        </div>
+                                        <h4 class="title">MASALA-SPICED CHICKPEAS</h4>
+                                        <p class="card-content">Duis aute irure dolor in reprehenderit 
+                                            in voluptate velit esse cillum dolore eu fugiat nulla paritatur occaecat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-12 item-2">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-2a.jpg" alt="">
+                                        <p class="new">NEW</p>
+                                        <div class="price">
+                                            <span class="price-num">$12</span>
+                                        </div>
+                                        <h4 class="title">KUNG PAO PASTRAMI</h4>
+                                        <p class="card-content">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+                                            suscipit laboriosam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-12 item-3">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-31.jpg" alt="">
+                                        <div class="price">
+                                            <span class="price-num">$45</span>
+                                        </div>
+                                        <h4 class="title">JALAPENO-MANGO SALSA</h4>
+                                        <p class="card-content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-12 item-1">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-2a.jpg" alt="">
+                                        <p class="new">NEW</p>
+                                        <div class="price">
+                                            <span class="price-num">$12</span>
+                                        </div>
+                                        <h4 class="title">KUNG PAO PASTRAMI</h4>
+                                        <p class="card-content">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+                                            suscipit laboriosam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-12 item-2">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-31.jpg" alt="">
+                                        <div class="price">
+                                            <span class="price-num">$45</span>
+                                        </div>
+                                        <h4 class="title">JALAPENO-MANGO SALSA</h4>
+                                        <p class="card-content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-12 item-3">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-1a.jpg" alt="">
+                                        <p class="new">NEW</p>
+                                        <div class="price">
+                                            <span class="price-num">$14</span>
+                                        </div>
+                                        <h4 class="title">MASALA-SPICED CHICKPEAS</h4>
+                                        <p class="card-content">Duis aute irure dolor in reprehenderit 
+                                            in voluptate velit esse cillum dolore eu fugiat nulla paritatur occaecat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-12 item-1">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-31.jpg" alt="">
+                                        <div class="price">
+                                            <span class="price-num">$45</span>
+                                        </div>
+                                        <h4 class="title">JALAPENO-MANGO SALSA</h4>
+                                        <p class="card-content">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+                                            officia deserunt mollit anim id est laborum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-12 item-2">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-1a.jpg" alt="">
+                                        <p class="new">NEW</p>
+                                        <div class="price">
+                                            <span class="price-num">$12</span>
+                                        </div>
+                                        <h4 class="title">KUNG PAO PASTRAMI</h4>
+                                        <p class="card-content">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+                                            suscipit laboriosam.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-12 item-3">
+                                    <div class="card-price">
+                                        <img src="./img/single-food-1a.jpg" alt="">
+                                        <p class="new">NEW</p>
+                                        <div class="price">
+                                            <span class="price-num">$14</span>
+                                        </div>
+                                        <h4 class="title">MASALA-SPICED CHICKPEAS</h4>
+                                        <p class="card-content">Duis aute irure dolor in reprehenderit 
+                                            in voluptate velit esse cillum dolore eu fugiat nulla paritatur occaecat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#newcard" role="button" data-slide="prev">
+                  <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#newcard" role="button" data-slide="next">
+                  <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </section>
+        <section class="simple">
+            <div class="container">
+                <h3>SIMPLE MODICATION</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla parriatur.
+                </p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="recipes">
+                            <div class="row">
+                                <div class="col-8"><h5>TASTE OUR
+                                    <br>
+                                     EXQUISITE RECIPES</h5></div>
+                                <div class="col-4"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="offer">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h5><span class="save">SAVE 30%</span><br>
+                                        <span>ONLY TODAY'S OFFER</span></h5>
+                                </div>
+                                <div class="col-5"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        <div class="amazing">
+                            <div class="row">
+                                <div class="col-8"><h5>DISCOVER <br> AMAZING INTERIOR</h5></div>
+                                <div class="col-4"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="slide-rate">
+            <div class="container">
+                <div id="rate" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exerciation ullamco laboris nisi ut aliquip et ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum.
+                        </p>
+                        <div class="rate-star">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <p class="author">Emma Fernandez</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exerciation ullamco laboris nisi ut aliquip et ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum.
+                        </p>
+                        <div class="rate-star">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <p class="author">Emma Fernandez</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                            exerciation ullamco laboris nisi ut aliquip et ea commodo consequat. Duis aute irure dolor 
+                            in reprehenderit in voluptate velit esse cillum.
+                        </p>
+                        <div class="rate-star">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="far fa-star"></i></span>
+                        </div>
+                        <p class="author">Emma Fernandez</p>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#rate" role="button" data-slide="prev">
+                      <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#rate" role="button" data-slide="next">
+                      <span aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </section>
+        <section class="latest-news">
+            <div class="container text-center">
+                <h3>LASTEST NEWS</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit in voluptate.
+                </p>
+            </div>
+        </section>
+        <section class="card-menu">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card-menu-content">
+                        <img src="./img/b-saffron-and-nougat-ice-cream.jpg" alt="">
+                        <div class="calendar-menu">
+                        <p class='date'><i class="far fa-calendar-alt"></i> NOV 04, 2015</p>
+                        <h5>NOUGAT ICE CREAM</h5>
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                            Quisque at tellus felis.Sed fringgillam, tellus non congue porttitor, dui eros fauci...
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card-menu-content">
+                        <img src="./img/b-brazilian-burger-with-egg.jpg" alt="">
+                        <div class="calendar-menu">
+                        <p class='date'><i class="far fa-calendar-alt"></i> NOV 04, 2015</p>
+                        <h5>BRAZILIAN BURGER</h5>
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                            Quisque at tellus felis.Sed fringgillam, tellus non congue porttitor, dui eros fauci...
+                        </p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                    <div class="card-menu-content">
+                        <img src="./img/home-1-blog-31.jpg" alt="">
+                        <div class="calendar-menu">
+                            <p class='date'><i class="far fa-calendar-alt"></i> NOV 04, 2015</p>
+                        <h5>GRILLED DUCK BREASTS</h5>
+                        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+                            Quisque at tellus felis.Sed fringgillam, tellus non congue porttitor, dui eros fauci...
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="food-drinks">
+            <div class="container">
+                <div class="food-drinks-img">
+                    <img src="./img/home-1-logo-1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="award-winning">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+                        <h4>AWARD WINNING RESTAURANT</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                        </p>
+                        <div class="award-img"><img src="./img/home-1-awards.jpg" alt=""></div>
+                        <h5>CONTACT INFO</h5>
+                        <div class="row contact-info">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <p><span class="icon-info"><i class="fas fa-map-marker-alt"></i></span>  Raymond Boulevard 224, New York</p>
+                                <p><span class="icon-info"><i class="fas fa-phone-alt"></i></span> 1-444-123-4559</p>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <p><span class="icon-info"><i class="fas fa-envelope"></i></span> info@themebusiness.com</p>
+                                <p><span class="icon-info"><i class="fas fa-wifi"></i></span> www.yourwebsite.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-12 opening">
+                        <div class="opening-hour">
+                            <h3>OPENING <span class="house">HOUSE</span></h3>
+                            <ul>
+                                <li>
+                                    <div class="box">
+                                        <p class="clock"><i class="far fa-clock"></i></p>
+                                        <p>Monday</p>
+                                        <div class="dot"></div>
+                                        <p>9:00 - 22:00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <p class="clock"><i class="far fa-clock"></i></p>
+                                        <p>Tuesday</p>
+                                        <div class="dot"></div>
+                                        <p>CLOSED</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <p class="clock"><i class="far fa-clock"></i></p>
+                                        <p>Webnesday</p>
+                                        <div class="dot"></div>
+                                        <p>9:00 - 22:00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <p class="clock"><i class="far fa-clock"></i></p>
+                                        <p>Thursday</p>
+                                        <div class="dot"></div>
+                                        <p>9:00 - 22:00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <p class="clock"><i class="far fa-clock"></i></p>
+                                        <p>Friday</p>
+                                        <div class="dot"></div>
+                                        <p>9:00 - 1:00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <p class="clock"><i class="far fa-clock"></i></p>
+                                        <p>Saturday</p>
+                                        <div class="dot"></div>
+                                        <p>9:00 - 1:00</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box">
+                                        <p class="clock"><i class="far fa-clock"></i></p>
+                                        <p>Sunday</p>
+                                        <div class="dot"></div>
+                                        <p>9:00 - 22:00</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="book-table">
+            <div class="container">
+                <form action="">
+                <div class="row">
+                    <div class="col-lg col-md-12 col-sm-12 col-12">
+                        <div class="select-box">
+                        <select name="" id="">
+                            <option value="" selected>1 Person</option>
+                            <option value="">2 Peoples</option>
+                            <option value="">3 Peoples</option>
+                        </select>
+                        <div class="add-icon"><i class="fas fa-user-plus"></i></div>
+                    </div>
+                    <p class="power">
+                        POWERED BY OPENTABLE
+                    </p>
+                    </div>
+                    <div class="col-lg-auto col-md-12 col-sm-12 col-12"><p class="for-at">for</p></div>
+                    <div class="col-md col-sm-12 col-12">
+                        <div class="select-box">
+                            <input type="date" name="" id="">
+                            <div class="add-icon"><i class="far fa-calendar-alt"></i></div>
+                    </div>
+                    </div>
+                    <div class="col-lg-auto col-md-12 col-sm-12 col-12"><p class="for-at">at</p></div>
+                    <div class="col-lg col-md-12 col-sm-12 col-12">
+                        <div class="select-box">
+                            <select name="" id="">
+                                <option value="" selected>7:00 pm</option>
+                                <option value="">8:00 pm</option>
+                                <option value="">9:00 pm</option>
+                            </select>
+                            <div class="add-icon"><i class="far fa-clock"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-md col-sm-12 col-12 btn-book">
+                        <button><i class="far fa-hand-point-right"></i>  BOOK A TABLE</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="piquant-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md col-sm-12 col-12">
+                        <img src="./img/landing-logo.png" alt="">
+                        <p>Lorem ipsum dolor set amet, consectetur adipiscing elit,
+                             sed do eiusmod tempor.
+                        </p>
+                        <ul>
+                            <li><span class="contact-icon"><i class="fas fa-envelope"></i></span> info@themebusiness.com</li>
+                            <li><span class="contact-icon"><i class="fas fa-phone-alt"></i></span> 1-444-123-4559</li>
+                            <li><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span> Raymond Boulevard 224, New York</li>
+                        </ul>
+                    </div>
+                    <div class="col-md col-sm-12 col-12">
+                        <h4>RECENT POSTS</h4>
+                        <ul class="recent-post">
+                            <li>Chiken Tinga Nachos</li>
+                            <li>Sweet and Sour Pork Chops</li>
+                            <li>Green Chile And Chicken Stew</li>
+                            <li>Pecant Pie Macarons</li>
+                        </ul>
+                    </div>
+                    <div class="col-md col-sm-12 col-12">
+                        <h4>INSTAGRAM POSTS</h4>
+                    </div>
+                    <div class="col-md col-sm-12 col-12">
+                        <h4>TWITTED FEED</h4>
+                        <p><span class="contact-icon"><i class="fab fa-twitter"></i></span> Discover a 
+                        #WordPress theme oasic; all you can imagine & more, just make your pick! Come on 
+                    down to http://t.co/J4OoD1BHS</p>
+                    </div>
+                </div>
+                <div class="row social-ft">
+                    <div class="col-md col-sm col-12">
+                        <p>Coppyright &copy; Mikado Themes</p>
+                    </div>
+                    <div class="col col-sm col-12">
+                        <ul class="follus">
+                            <li>FOLLOW US</li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-tripadvisor"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

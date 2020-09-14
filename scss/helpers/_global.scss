@@ -1,0 +1,35 @@
+@import "./variables";
+@import "./color";
+@import "./mixins";
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size:12px;
+    font-family: $primary-font!important;
+    height: 100%;
+    h1,h2,h3,h4,h5,h6{
+        font-family: $title-font;
+        font-weight: 600;
+    }
+    ul{
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+    a{
+        text-decoration:none;
+        &:hover{
+            text-decoration:none;
+        }
+    }
+    p{
+        color:$secondary-color;
+    }
+}
+@include breakpoint(mobile){
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
