@@ -1,0 +1,51 @@
+.service{
+    padding:10rem;
+    @include setMaxwidth($lg){
+        padding:3rem 1rem;
+        .container{
+            max-width: none;
+        }
+    }
+    &__top{
+        @extend %content;
+        padding:0 10rem;
+        @include setMaxwidth($md){
+            padding:0 4rem;
+        }
+        @include setMaxwidth($md){
+            padding:0;
+        }
+        &--title{
+            @include setMaxwidth($sm){
+                line-height: 5.5rem!important;
+            }
+            @include setMaxwidth($xsm){
+                font-size: 2.7rem!important;
+                line-height: 4rem!important;
+            }
+        }
+        &--img{
+            text-align: center;
+        }
+        &--border{
+            @extend %border;
+        }
+    }
+    &__menu{
+        &--container{
+            @include grid($columns:repeat(3,1fr));
+            padding:3rem 0;
+            @include setMaxwidth($md){
+                @include grid($columns:repeat(1,1fr));
+                font-size: 1.7rem;
+                padding:3rem 5rem;
+            }
+            @include setMaxwidth($sm){
+                padding:3rem 1rem;
+            }
+            .menu-item{
+                @extend %item;
+            }
+        }
+    }
+}

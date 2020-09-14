@@ -1,0 +1,38 @@
+/* ---- Import reset CSS ----- */
+@import "../scss/helpers/reset";
+
+/* ---- Utils ---- */
+@import "./helpers/variables";
+@import "./helpers/colors";
+@import "./helpers/global";
+@import "./helpers/shared";
+@import "./helpers/mixins";
+
+/* ---- Import styles for layout ---- */
+// 1. Navbar
+@import "../scss/layout/1.navbar/navbar";
+// 2. Header
+//-- 2.1. Caring Life
+@import "../scss/layout/2.header/1.caringlife/caringlife";
+
+//2. Main
+// -- 2.1. Welcome
+@import "../scss/layout/3.main/1.welcome/welcome";
+// -- 2.2. Meet our
+@import "../scss/layout/3.main/2.meetour/meetour";
+// -- 2.3. Service
+@import "../scss/layout/3.main/3.service/service";
+// -- 2.4. Tour
+@import "../scss/layout/3.main/4.tour/tour";
+// -- 2.5. Emergency
+@import "../scss/layout/3.main/5.emergency/emergency";
+// -- 2.6. Appointment
+@import "../scss/layout/3.main/6.appointment/appointment";
+// -- 2.7. Slider
+@import "../scss/layout/3.main/7.slider/slider";
+
+//3. Footer
+// -- 3.1. Footerav
+@import "../scss/layout/4.footer/1.footerav/footerav";
+// -- 3.2. Copy right
+@import "../scss/layout/4.footer/2.copyright/copyright";

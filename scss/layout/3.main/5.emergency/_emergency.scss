@@ -1,0 +1,43 @@
+.emergency{
+    @include flex();
+    @include setMaxwidth($md){
+        @include flex($direction:column);
+    }
+    &__menu{
+        text-align: center;
+        line-height: 3rem;
+        padding:3rem;
+        color:white;
+        &--title{
+            font-size:1.7rem;
+            margin-bottom: 2rem;
+        }
+        &--text{
+            font-size:1.4rem;
+            margin-bottom:2.5rem;
+        }
+        &--btn{
+            .btn{
+                border:2px solid white;
+                color:white;
+                padding:0.7rem 3.5rem;
+                font-size:1.4rem;
+                font-family:$header-font ;
+                &:hover{
+                    background:white;
+                    color:$primary-color;
+                }
+            }
+
+        }
+    }
+    .care{
+        background-color:$primary-color;
+    }
+    .expert{
+        background-color:$expert;
+    }
+    .superb{
+        background-color:$superb;
+    }
+}

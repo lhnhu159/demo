@@ -1,0 +1,96 @@
+.tour {
+    background-image: url("../img/paralax-bg-tour-facilities.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    .container {
+        @extend %content;
+        padding: 10rem;
+        @include setMaxwidth($lg){
+            padding:4rem 2rem;
+        }
+    }
+    .title{
+        @include setMaxwidth($xl){
+            line-height: 6rem;
+        }
+        @include setMaxwidth($xsm){
+            font-size: 2.7rem!important;
+            line-height: 4rem;
+        }
+    }
+    .tour-border {
+        @extend %border;
+    }
+    .play-img {
+        margin-top: 4rem;
+        img {
+            cursor: pointer;
+        }
+    }
+    .popup-container {
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: none;
+        z-index: 10;
+        left: 0;
+        overflow: auto;
+        top: 0;
+        background: rgba(0, 0, 0, 0);
+        color: $navtext;
+        .popupVideo {
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            width: 50%;
+            margin-top: -200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            border-radius: 0.5rem;
+            @include setMaxwidth($lg){
+                width: 90%;
+            }
+            @include setMaxwidth($xsm){
+                width: 80%;
+                height: 50%;
+                iframe{
+                    height: 100%;
+                }
+            }
+            &__header {
+                padding: 2rem;
+                @include flex($justify: space-between, $wrap: wrap);
+                font-size: 1.7rem;
+            }
+            .title{
+                @include setMaxwidth($xsm){
+                    font-size: 1.2rem!important;
+                }
+            }
+            .icon-exit {
+                cursor: pointer;
+            }
+            .border-video {
+                width: 100%;
+                border:none;
+                border-bottom: 2px solid $border;
+            }
+            &__content {
+                padding: 2rem;
+            }
+        }
+    }
+}
+.showpopup {
+    margin-top: 5rem !important;
+}
+.bg {
+    background: rgba(0, 0, 0, 0.7) !important;
+}

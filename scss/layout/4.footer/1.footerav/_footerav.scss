@@ -1,0 +1,100 @@
+.footerav{
+    padding:8rem 4rem;
+    font-family:$header-font;
+    @include grid($columns:repeat(3,1fr));
+    @include setMaxwidth($md){
+        @include grid($columns:repeat(1,1fr));
+    }
+    &__health{
+        line-height: 3rem;
+        &--logo{
+            margin-bottom: 1.5rem;
+        }
+        &--text{
+            font-size:1.2rem;
+            margin-bottom: 2rem;
+        }
+        &--border{
+            border-bottom:1px solid $border;
+            width: 100%;
+            margin-bottom:2rem;
+        }
+        &--learnmore{
+            font-size: 1.7rem;
+            font-family: $primary-font;
+            color:$navtext;
+        }
+        &--social{
+            margin-top:2rem;
+            ul{
+                @include flex();
+                li{
+                    margin-right:2rem;
+                }
+            }
+        }
+    }
+    &__contact{
+        line-height: 3rem;
+        &--title{
+            font-size: 1.7rem;
+            margin-bottom:2rem;
+        }
+        &--border{
+            width: 10%;
+            border-bottom:2px solid $primary-color;
+            margin-bottom:2rem;
+        }
+        &--list{
+            font-size: 1.3rem;
+            font-family: $primary-font;
+            margin-bottom:4rem;
+            .icon{
+                color:$primary-color;
+                margin-right:1rem;
+            }
+        }
+    }
+    &__medical{
+        line-height: 3rem;
+        &--title{
+            font-size: 1.7rem;
+            margin-bottom:2rem;
+        }
+        &--border{
+            width: 10%;
+            border-bottom:2px solid $primary-color;
+            margin-bottom:2rem;
+        }
+        &--list{
+            font-size: 1.3rem;
+            font-family: $primary-font;
+            margin-bottom:2rem;
+            .icon{
+                color:$primary-color;
+                margin-right:1rem;
+            }
+            a{
+                color:black;
+                &:hover{
+                    color:$primary-color;
+                    transition:color .3s;
+                }
+            }
+        }
+        &--btn{
+            .btn{
+                padding:1rem 3rem;
+                border:1px solid black;
+                font-size: 1.5rem;
+                &:hover{
+                    background-color:$primary-color;
+                    border:none;
+                    color:white;
+                    transition: all .3s;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.welcome{
+    padding:6rem;
+    color:#333333;
+    @include setMaxwidth($lg){
+        padding:2.5rem 1rem;
+        .container{
+            max-width: none;
+        }
+    }
+    &-title{
+        font-size:4rem;
+        text-align: center;
+        line-height: 8rem;
+        font-weight: 100;
+        @include setMaxwidth($xl){
+            line-height: 6rem;
+        }
+        @include setMaxwidth($xsm){
+            font-size: 2.7rem;
+            line-height: 4rem;
+        }
+    }
+    &-text{
+        text-align: center;
+        font-size: 2rem;
+        padding:0 9rem;
+        line-height: 5rem;
+        margin-bottom:4rem;
+        @include setMaxwidth($lg){
+            padding:0;
+        }
+    }
+    &-menu{
+        @include grid($columns:repeat(4,1fr));
+        @include setMaxwidth($lg){
+            @include grid ($columns:repeat(2,1fr));
+        }
+        @include setMaxwidth($md){
+            @include grid ($columns:repeat(1,1fr));
+        }
+        &-item{
+            @extend %item;
+        }
+    }
+}

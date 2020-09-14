@@ -1,0 +1,230 @@
+.top-page{
+    position: fixed;
+    bottom: 0;
+    right:4rem;
+    padding:1rem 1.3rem;
+    background:rgba($color: black, $alpha: 0.8);
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    color:white;
+    display: none;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+.top-bar {
+    background: rgba(0, 0, 0, 0);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include setMaxwidth($xl) {
+        position: relative !important;
+        background: $topbarsm;
+    }
+    &__nav {
+        padding: 0 5rem;
+        @include setMaxwidth($xl) {
+            padding:0;
+        }
+        img {
+            @include setMaxwidth($xl) {
+                margin: 2rem;
+                width: 80%;
+            }
+        }
+        @include flex($justify: space-between, $wrap: wrap);
+        &--menu {
+            @include setMaxwidth($xl) {
+                @include flexitem($basis: 100%);
+                position: relative;
+            }
+            
+        }
+        .menu {
+            font-size: 1.3rem;
+            font-family: $header-font;
+            @include flex();
+            @include setMaxwidth($xl) {
+                flex-direction: column !important;
+                width: 100%;
+                max-height: 0;
+                    overflow: hidden;
+                    background: $topbarsm;
+                    -webkit-transition: all 0.4s ease-in-out;
+                        -moz-transition: all 0.4s ease-in-out;
+                        -o-transition: all 0.4s ease-in-out;
+                        transition: all 0.4s ease-in-out;
+            }
+        }
+        .menu-item {
+            line-height: 120px;
+            @include setMaxwidth($xl) {
+                width: 100%;
+                line-height: 4rem !important;
+                border-bottom: 1px solid $border;
+            }
+        }
+        .link-item:not(.home) {
+            color: white;
+            display: block;
+            padding-left: 3rem;
+            @include setMaxwidth($xl) {
+                font-size: 1rem !important;
+                font-family: $primary-font;
+                display: block;
+                &:hover {
+                    background: $primary-color;
+                    color: white;
+                }
+            }
+            &:not(.makeapoint):hover {
+                color: $primary-color;
+                transition: all 0.3s;
+            }
+        }
+        .home {
+            color: $primary-color;
+            padding-left: 3rem;
+            @include setMaxwidth($xl) {
+                display: block;
+                background: $primary-color;
+                color: white !important;
+                font-size: 1rem !important;
+                border: none!important;
+            }
+        }
+        .make {
+            background: $primary-color;
+            padding: 1rem 2rem;
+            border-radius: 2%;
+            @include setMaxwidth($xl) {
+                background: none !important;
+                padding: 0 !important;
+            }
+            &:hover {
+                background: $hoverbtn;
+                transition: all 0.4s;
+            }
+        }
+        .menu-home{
+            @include setMaxwidth($xl) {
+                border:none!important;
+            }
+        }
+        .has-menu {
+            position: relative;
+            @include setMaxwidth($xl){
+                @include flex($justify:space-between,$wrap: wrap);
+            }
+            
+            &:hover {
+                .sub-menu {
+                    display: block;
+                    @include setMaxwidth($xl){
+                        display: none;
+                    }
+                }
+            }
+        }
+        .icon-dropdown{
+            margin-right: 3rem;
+            color:white;
+            display: none;
+            @include setMaxwidth($xl){
+                display: inline;
+            }    
+        }
+        .sub-menu {
+            z-index: 1;
+            width: 230px;
+            position: absolute;
+            display: none;
+            border-top: 4px solid #29a3a3;
+            background: rgba($color: $primary-color, $alpha: 0.8);
+            @include setMaxwidth($xl){
+                position: relative;
+                @include flexitem($basis:100%);
+                background:inherit;
+                border-top:none;
+                display: block!important;
+                max-height: 0;
+                -webkit-transition: all 0.4s ease-in-out;
+                -moz-transition: all 0.4s ease-in-out;
+                -o-transition: all 0.4s ease-in-out;
+                transition: all 0.4s ease-in-out;
+                overflow: hidden;
+            }
+            &-item {
+                line-height: 4rem;
+                border-bottom: 1px solid white;
+                @include setMaxwidth($xl){
+                    border-top:1px solid white;
+                    border-bottom: none;
+                }
+            }
+        }
+        .sub-link {
+            color: white;
+            font-size: 1rem;
+            display: block;
+            padding: 0 2rem;
+            @include setMaxwidth($xl){
+                padding:0 4rem;
+                &::before{
+                    content: ' -';
+                }
+            }
+            &:hover {
+                background: rgba($color: $primary-color, $alpha: 0.9);
+                transition: 0.4s all;
+            }
+        }
+    }
+    .icon-menu {
+        font-size: 2rem;
+        margin:2rem;
+        margin-top:1rem;
+        color: $primary-color;
+        padding:0.5rem;
+        background:none;
+        border:none;
+        display: none;
+        @include setMaxwidth($xl) {
+            display: inline;
+        }
+    }
+    .img-dark {
+        display: none;
+    }
+}
+.sticky {
+    background: white;
+    @include setMaxwidth($xl){
+        background:$topbarsm;
+    }
+    transition: 0.3s ease-in;
+    .menu {
+        .link-item:not(.home):not(.makeapoint) {
+            color: $navtext;
+            @include setMaxwidth($xl){
+                color:white;
+            }
+        }
+    }
+    .img-dark {
+        display: inline;
+    }
+    .img-light {
+        display: none;
+    }
+}
+.show-menu {
+    max-height: 600px!important;
+}
+.show-submenu{
+    max-height: 300px!important;
+}
+.show-toppage{
+    display:inline;
+}

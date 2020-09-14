@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family:$primary-font;
+    font-weight: 100;
+}
+html{
+    font-size:$fontsize;
+}
+a{
+    text-decoration:none;
+    &:hover{
+        text-decoration:none;
+    }
+}
+img{
+    max-width: 100%;
+}
