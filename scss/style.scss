@@ -1,0 +1,39 @@
+/* ---- Import reset CSS ----- */
+
+@import "../scss/helpers/reset";
+
+/* ---- Utils ---- */
+
+@import "./helpers/variables";
+@import "./helpers/colors";
+@import "./helpers/global";
+@import "./helpers/shared";
+@import "./helpers/mixins";
+
+/* ---- Import styles for layout ---- */
+
+// 1. Topbar
+@import "./layout/1.topbar/topbar";
+//2. Header
+@import "./layout/2.header/1.header/header";
+// 3.Main
+// 3.1. Welcome
+@import "./layout/3.main/1.welcome/welcome";
+// 3.2. Meet our
+@import "./layout/3.main/2.meetour/meetour";
+// 3.3. Sign up
+@import "./layout/3.main/3.signup/signup";
+// 3.4. Talented
+@import "./layout/3.main/4.talented/talented";
+// 3.5. Quality
+@import "./layout/3.main/5.quality/quality";
+// 3.6. Collections
+@import "./layout/3.main/6.collections/collections";
+// 3.7. Trends
+@import "./layout/3.main/7.trends/trends";
+// 3.8. News
+@import "./layout/3.main/8.news/news";
+//3.9. Contact us
+@import "./layout/3.main/9.contactus/contactus";
+// 4. Footer
+@import "./layout/4.footer/footer";

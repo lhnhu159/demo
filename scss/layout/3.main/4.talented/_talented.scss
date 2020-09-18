@@ -1,0 +1,38 @@
+.talented {
+    padding: 8rem 2rem;
+    text-align: center;
+    background: $bgdark;
+    .container {
+        @include setMaxwidth($md) {
+            padding: 0 1rem;
+            max-width: none;
+        }
+    }
+    &__title {
+        @extend %title;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        @extend %text;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    &__menu {
+        @include grid($columns: repeat(4, 1fr));
+        @include setMaxwidth($lg) {
+            @include grid($columns: repeat(2, 1fr), $rowGap: 5.5rem);
+        }
+        @include setMaxwidth($sm) {
+            @include grid($columns: repeat(1, 1fr), $rowGap: 5.5rem);
+        }
+    }
+    .name {
+        @extend %title;
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+    .position {
+        font-size: 1.2rem;
+        letter-spacing: 4px;
+    }
+}

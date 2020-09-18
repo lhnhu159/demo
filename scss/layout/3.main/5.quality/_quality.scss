@@ -1,0 +1,35 @@
+.quality {
+    @include grid($columns: repeat(2, 1fr), $columnGap: 0);
+    @include setMaxwidth($lg) {
+        @include grid($columns: unset, $rows: repeat(2, 1fr), $rowGap: 0);
+    }
+    &__img {
+        background-image: url('../img/girl_covered1.jpg');
+        @extend %bg-img;
+    }
+    &__content {
+        padding: 8rem;
+        background: $blue;
+        text-align: center;
+        @include setMaxwidth($sm) {
+            padding: 8rem 2rem;
+        }
+        &-title {
+            @extend %title;
+            margin-bottom: 0.5rem;
+        }
+        &-values {
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            margin-bottom: 0.5rem;
+            line-height: 3rem;
+        }
+        &-text {
+            @extend %text;
+            margin-bottom: 2rem;
+        }
+    }
+    .btn {
+        @extend %btn;
+    }
+}

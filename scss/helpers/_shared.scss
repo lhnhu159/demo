@@ -1,0 +1,30 @@
+%btn {
+    padding: 1rem 1.8rem;
+    color: rgba($color: white, $alpha: 0.7);
+    border: 2px solid rgba($color: white, $alpha: 0.7);
+    border-radius: 0;
+    transition: .5s ease-in-out;
+    font-size: 1rem;
+    font-weight: 600;
+    &:hover {
+        color: rgba($color: white, $alpha: 1);
+        border: 2px solid rgba($color: white, $alpha: 1);
+    }
+}
+
+%bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%title {
+    font-family: $titlefont;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+%text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}

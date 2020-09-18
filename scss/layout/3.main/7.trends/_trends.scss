@@ -1,0 +1,13 @@
+.trends {
+    padding: 8rem 2rem;
+    text-align: center;
+    background: $bgtrends;
+    &__title {
+        @extend %title;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        @extend %text;
+        margin: 4rem 0;
+    }
+}

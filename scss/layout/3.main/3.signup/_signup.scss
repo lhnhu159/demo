@@ -1,0 +1,66 @@
+.signup {
+    padding: 14rem 2rem;
+    background-image: url('/img/quote_bg_studio1.jpg');
+    background-size: 1500px 790px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    @include setMaxwidth($md) {
+        background-size: 1500px 890px;
+    }
+    @include setMaxwidth($xsm) {
+        padding: 7rem 2rem;
+        background-size: 1500px 790px;
+    }
+    .container {
+        @include grid($columns: 2fr 1fr);
+        @include setMaxwidth($lg) {
+            max-width: none;
+            padding: 0 1rem;
+        }
+        @include setMaxwidth($md) {
+            @include flex($direction: column);
+        }
+        @include setMaxwidth($sm) {
+            padding: 0;
+        }
+    }
+    &__left {
+        padding: 4rem;
+        border: 0.7rem solid white;
+        @include setMaxwidth($lg) {
+            padding: 3rem;
+        }
+        @include setMaxwidth($sm) {
+            padding: 1.8rem;
+        }
+        &-text {
+            @extend %title;
+            @include setMaxwidth($md) {
+                font-size: 2.8rem;
+            }
+            @include setMaxwidth($sm) {
+                font-size: 2.4rem;
+            }
+            @include setMaxwidth($xsm) {
+                font-size: 2rem;
+            }
+        }
+    }
+    &__right {
+        padding: 4rem;
+        text-align: center;
+        background: rgba($color: $blue, $alpha: 0.8);
+        @include flex();
+        &-btn {
+            width: 100%;
+        }
+        @include setMaxwidth($md) {
+            padding: 0;
+            background: none;
+        }
+    }
+    .btn {
+        @extend %btn;
+        font-size: 1.3rem;
+    }
+}

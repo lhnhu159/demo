@@ -1,0 +1,35 @@
+.meetour {
+    @include grid($columns: repeat(2, 1fr), $columnGap: 0);
+    @include setMaxwidth($lg) {
+        @include grid($columns: unset, $rows: repeat(2, 1fr), $rowGap: 0);
+    }
+    &__content {
+        background: black;
+        padding: 8rem;
+        text-align: center;
+        @include setMaxwidth($md) {
+            padding: 8rem 2rem;
+        }
+        &-title {
+            @extend %title;
+            margin-bottom: 1.4rem;
+        }
+        &-thestudio {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            letter-spacing: 4px;
+        }
+        &-text {
+            @extend %text;
+            margin-bottom: 2rem;
+        }
+    }
+    &__img {
+        background-image: url('/img/col_image112.jpg');
+        @extend %bg-img;
+        background-position: top center;
+    }
+    .btn {
+        @extend %btn;
+    }
+}
