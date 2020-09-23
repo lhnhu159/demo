@@ -1,0 +1,5 @@
+.header {
+    height: 60vh;
+    background-image: url('/img/kids_conner_4.jpg');
+    @extend %bg-img;
+}

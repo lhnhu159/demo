@@ -1,0 +1,41 @@
+/* ---- Import reset CSS ----- */
+
+@import "../scss/helpers/reset";
+
+/* ---- Utils ---- */
+
+@import "./helpers/variables";
+@import "./helpers/colors";
+@import "./helpers/shared";
+@import "./helpers/mixins";
+@import "./helpers/global";
+
+/* ---- Import styles for layout ---- */
+
+// 1. Nav menu
+@import "./layout/1.sidebar/sidebar";
+// 2. Content
+// 2.1. Header
+@import "./layout/2.content/1.header/header";
+// 2.2. Learning
+@import "./layout/2.content/2.learning/learning";
+// 2.3. About
+@import "./layout/2.content/3.about/about";
+// 2.4. Child img
+@import "./layout/2.content/4.childimg/childimg";
+// 2.5. Meet our
+@import "./layout/2.content/5.meetour/meetour";
+// 2.6. People
+@import "./layout/2.content/6.people/people";
+// 2.7. Cloud
+@import "./layout/2.content/7.cloud/cloud";
+// 2.8. Upcoming
+@import "./layout/2.content/8.upcoming/upcoming";
+// 2.9. Summer
+@import "./layout/2.content/9.summer/summer";
+// 2.10. Kiddies
+@import "./layout/2.content/10.kiddies/kiddies";
+// 2.11. Register
+@import "./layout/2.content/11.register/register";
+// 3. Footer
+@import "./layout/3.footer/footer";

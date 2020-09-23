@@ -1,0 +1,36 @@
+.summer {
+    padding: 8rem 15rem;
+    background: url('/img/family-bbq-bkgd.jpg');
+    @extend %bg-img;
+    background-position: center center;
+    text-align: center;
+    color: white;
+    @include setMaxwidth($md) {
+        padding: 8rem;
+    }
+    &__title {
+        @extend %title;
+    }
+    &__border {
+        width: 60%;
+        margin: 2rem auto;
+        margin-bottom: 4rem;
+        border-bottom: 2px dashed $bdyellow;
+    }
+    &__text {
+        @extend %text;
+        color: white;
+        margin-bottom: 4rem;
+    }
+    &__time {
+        @include flex($justify: center);
+        line-height: 2rem;
+    }
+    .item {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        background-color: $bgdark;
+        padding: 1rem 1.5rem;
+        border-radius: 3px;
+    }
+}

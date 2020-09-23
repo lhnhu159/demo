@@ -1,0 +1,26 @@
+.register {
+    padding: 4rem;
+    background-color: $bggreen;
+    @include grid($columns: 4fr 1fr);
+    @include setMaxwidth($md) {
+        @include flex($direction: column);
+        padding: 5rem 4rem;
+    }
+    &__content {
+        @extend %title;
+        margin: 0;
+        color: white;
+    }
+    .btn {
+        color: white;
+        background-color: $red;
+        padding: 0.7rem 3rem;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: $bdyellow;
+        }
+    }
+}

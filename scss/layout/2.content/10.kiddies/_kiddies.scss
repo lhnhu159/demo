@@ -1,0 +1,34 @@
+.kiddies {
+    padding: 8rem 3rem;
+    @include setMaxwidth($md) {
+        padding: 8rem 5rem;
+    }
+    @include setMaxwidth($xsm) {
+        padding: 8rem;
+    }
+    &__title {
+        @extend %title;
+        text-align: center;
+    }
+    &__border {
+        width: 60%;
+        margin: 3rem auto;
+        border-bottom: 2px dashed $bdyellow;
+    }
+    &__grid {
+        @include grid($columns: repeat(3, 1fr));
+        @include setMaxwidth($md) {
+            @include grid($columns: repeat(2, 1fr));
+        }
+        @include setMaxwidth($xsm) {
+            @include grid($columns: repeat(1, 1fr));
+        }
+    }
+    .item {
+        transition: .3s ease-in-out;
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

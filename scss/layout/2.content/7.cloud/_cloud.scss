@@ -1,0 +1,15 @@
+.cloud {
+    transform: translateY(-100px);
+    &__content {
+        padding: 0;
+        fill: white;
+    }
+}
+
+.cloud-bottom {
+    background-color: $bgblue;
+    &__content {
+        transform: translateY(-100px);
+        fill: $bgblue;
+    }
+}

@@ -1,0 +1,5 @@
+.childimg {
+    height: 50vh;
+    background-image: url('../img/kids_conner_5-600x450.jpg');
+    @extend %bg-img;
+}

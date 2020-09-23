@@ -1,0 +1,16 @@
+.people {
+    padding: 8rem;
+    text-align: center;
+    @include grid($columns: repeat(4, 1fr));
+    background-image: url('../img/pencil_bkgd.jpg');
+    @extend %bg-img;
+    &__number {
+        color: white;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    &__text {
+        font-size: 1.2rem;
+        color: white;
+    }
+}

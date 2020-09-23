@@ -1,0 +1,41 @@
+.about {
+    padding: 8rem 6rem;
+    background-image: url('../img/bg_section_1.jpg');
+    color: white;
+    @include setMaxwidth($md) {
+        padding: 8rem 3rem;
+    }
+    &__title {
+        @extend %title;
+        text-align: center;
+    }
+    &__border {
+        width: 40%;
+        margin: 2rem auto;
+        border-bottom: 2px dashed $bdyellow;
+    }
+    &__menu {
+        @include grid($columns: repeat(2, 1fr));
+        margin-top: 5rem;
+        @include setMaxwidth($sm540) {
+            @include grid($columns: repeat(1, 1fr));
+        }
+    }
+    .item {
+        @include grid($columns: 1fr 2fr, $columnGap: 0);
+        &__title {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        &__border {
+            width: 10%;
+            border-bottom: 2px solid $bdyellow;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        &__text {
+            @extend %text;
+            color: white;
+        }
+    }
+}

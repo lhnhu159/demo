@@ -1,0 +1,92 @@
+.upcoming {
+    padding: 5rem;
+    padding-top: 1rem;
+    @include setMaxwidth($md) {
+        padding: 8rem;
+    }
+    &__title {
+        @extend %title;
+        text-align: center;
+    }
+    &__border {
+        width: 40%;
+        margin: 2rem auto;
+        border-bottom: 2px dashed $red;
+        @include setMaxwidth($md) {
+            width: 60%;
+        }
+    }
+    &__menu {
+        margin-top: 6rem;
+    }
+    .item {
+        @include grid($columns: 1fr 2fr 1fr);
+        padding-bottom: 4rem;
+        border-bottom: 1px solid $bdyellow;
+        margin-top: 4rem;
+        @include setMaxwidth($md) {
+            @include flex($justify: space-between, $wrap: wrap);
+        }
+        &__title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 3rem;
+            margin-bottom: 2rem;
+        }
+        &__text {
+            @extend %text;
+            margin-bottom: 3rem;
+        }
+        &__group {
+            font-size: 1.3rem;
+            line-height: 3rem;
+        }
+    }
+    img {
+        @extend %scale;
+    }
+    .icon {
+        margin-right: 1rem;
+        color: $red;
+    }
+    .art {
+        border-bottom: none;
+    }
+    &__btn {
+        text-align: right;
+        margin-top: 4rem;
+        @include setMaxwidth($md) {
+            @include flexitem($basis: 100%);
+            margin-top: 0;
+        }
+    }
+    .btn {
+        color: white;
+        background-color: $red;
+        padding: 0.7rem 3rem;
+        border-radius: 2rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: $bdyellow;
+        }
+    }
+}
+
+.viewall {
+    text-align: center;
+    &__link {
+        display: block;
+        color: white;
+        background-color: $bggreen;
+        line-height: 4rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: $red;
+            color: white;
+        }
+    }
+}

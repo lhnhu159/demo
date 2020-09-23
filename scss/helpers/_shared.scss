@@ -1,0 +1,28 @@
+%bg-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+%title {
+    font-family: $titlefont;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+}
+
+%text {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: $textcolor;
+}
+
+%scale {
+    transition: .4s ease-in-out;
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+}

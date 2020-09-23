@@ -1,0 +1,33 @@
+.footer {
+    padding: 8rem;
+    padding-top: 1rem;
+    background: $bgblue;
+    text-align: center;
+    @include setMaxwidth($lg) {
+        padding: 4rem;
+        padding-top: 3rem;
+    }
+    &__menu {
+        @include flex($justify: center);
+    }
+    .item {
+        margin: 0 2rem;
+    }
+    .link {
+        font-size: 1.2rem;
+        color: white;
+        transition: .3s ease-in-out;
+        line-height: 2rem;
+        &:hover {
+            color: rgba($color: white, $alpha: 0.5);
+        }
+    }
+    .active {
+        color: rgba($color: white, $alpha: 0.5);
+    }
+    &__copy {
+        margin-top: 3rem;
+        color: rgba($color: white, $alpha: 0.5);
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,59 @@
+.meetour {
+    padding: 8rem 3rem;
+    @include setMaxwidth($md) {
+        padding: 8rem 5rem;
+    }
+    &__title {
+        @extend %title;
+        text-align: center;
+    }
+    &__border {
+        width: 40%;
+        border-bottom: 2px dashed $bdyellow;
+        margin: 7rem auto;
+        margin-top: 0;
+        @include setMaxwidth($md) {
+            width: 60%;
+        }
+    }
+    &__menu {
+        @include grid($columns: repeat(3, 1fr));
+        @include setMaxwidth($md) {
+            @include grid($columns: repeat(2, 1fr), $rowGap: 5rem);
+        }
+        @include setMaxwidth($xsm) {
+            @include grid($columns: repeat(1, 1fr), $rowGap: 5rem);
+        }
+    }
+    .content {
+        text-align: center;
+        &__img {
+            margin-bottom: 2rem;
+            border-radius: 6px;
+            @extend %scale;
+        }
+        &__name {
+            font-weight: 700;
+            font-size: 1.2rem;
+            line-height: 3rem;
+        }
+        &__position {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        &__text {
+            @extend %text;
+            margin-bottom: 2rem;
+            @include setMaxwidth($xsm) {
+                padding: 0 4rem;
+            }
+        }
+        &__social {
+            @include flex($justify: center);
+        }
+        .link {
+            margin-left: 1rem;
+        }
+    }
+}

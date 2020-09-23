@@ -1,0 +1,19 @@
+.learning {
+    padding: 3rem;
+    @include grid($columns: auto auto, $columnGap: 1.7rem);
+    @include setMaxwidth($sm540) {
+        @include flex($direction: column);
+        padding: 6rem;
+    }
+    &__title {
+        @extend %title;
+    }
+    &__border {
+        width: 60%;
+        border-bottom: 2px dashed $red;
+        margin-bottom: 2.5rem;
+    }
+    &__text {
+        @extend %text;
+    }
+}
