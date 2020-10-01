@@ -1,0 +1,90 @@
+.wrapper {
+    position: relative;
+}
+
+.nav {
+    background: $primarycolor;
+    padding: 3rem 0;
+    z-index: 99;
+    @include setMaxwidth($xl) {
+        z-index: 0;
+        padding: 0;
+    }
+    .container {
+        @include setMaxwidth($xl) {
+            max-width: none;
+            padding: 0;
+            @include flex($justify: space-between, $wrap: wrap);
+        }
+    }
+    .menu {
+        @include flex($justify: space-between);
+        @include setMaxwidth($xl) {
+            display: block;
+            @include flexitem($basis: 100%);
+            margin-top: 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: .3s ease-in-out;
+        }
+        &__link {
+            color: $menucolor;
+            font-family: $menufont;
+            font-size: 1.1rem;
+            transition: .3s ease-in-out;
+            display: block;
+            line-height: 3rem;
+            &:hover {
+                color: white;
+            }
+            @include setMaxwidth($xl) {
+                border-top: 1px solid $gray;
+                padding: 0.7rem;
+                padding-left: 2rem;
+                color: white;
+                font-family: $primaryfont;
+                font-size: 1rem;
+            }
+        }
+    }
+    .logo-img {
+        @include setMaxwidth($xl) {
+            display: none;
+        }
+    }
+    .logo-small {
+        display: none;
+        @include setMaxwidth($xl) {
+            display: block;
+            margin-left: 1.5rem;
+            margin-top: 1.5rem;
+        }
+    }
+    .icon-menu {
+        background: none;
+        color: white;
+        font-size: 1.7rem;
+        border: none;
+        outline: none;
+        display: none;
+        padding: 0.5rem;
+        @include setMaxwidth($xl) {
+            display: inline;
+            margin: 1.5rem;
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+.sticky {
+    position: sticky!important;
+    top: 0!important;
+}
+
+.active {
+    color: white!important;
+}
+
+.show-menu {
+    max-height: 600px!important;
+}

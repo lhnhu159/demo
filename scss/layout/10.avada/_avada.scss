@@ -1,0 +1,35 @@
+.avada {
+    @include grid($columns: repeat(2, 1fr), $columnGap: 0);
+    @include setMaxwidth($md) {
+        @include grid($rows: repeat(2, 1fr), $columns: unset, $rowGap: 0);
+    }
+    &__item {
+        text-align: center;
+        padding: 8rem;
+        @extend %bg-img;
+        @include setMaxwidth($xl) {
+            padding: 4rem;
+        }
+    }
+    .groom {
+        background-image: url('/img/groom_bg.jpg');
+    }
+    .bride {
+        background-image: url('/img/bride_bg.jpg');
+    }
+    .people {
+        border-radius: 50%;
+    }
+    &__text {
+        margin: 3rem 0;
+        @extend %text;
+        font-style: italic;
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+    &__name {
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        font-weight: 700;
+    }
+}

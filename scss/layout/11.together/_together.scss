@@ -1,0 +1,23 @@
+.together {
+    text-align: center;
+    background-color: white;
+    .container {
+        padding: 8rem 2rem;
+    }
+    &__title {
+        @extend %title;
+        margin: 3rem;
+    }
+    &__text {
+        @extend %text;
+        padding: 0 15rem;
+        font-style: italic;
+        color: $titlecolor;
+        @include setMaxwidth($lg) {
+            padding: 0 5rem;
+        }
+        @include setMaxwidth($md) {
+            padding: 0;
+        }
+    }
+}

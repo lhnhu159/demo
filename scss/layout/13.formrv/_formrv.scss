@@ -1,0 +1,111 @@
+.formrv {
+    background-image: url('../img/rsvp_bg.jpg');
+    color: white;
+    background-position: left top;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    @include setMaxwidth($breakPoint: 1500px) {
+        background-size: inherit;
+        max-height: 950px;
+    }
+    @include setMaxwidth($xl) {
+        background-size: 4000px;
+    }
+    @include setMaxwidth($sm) {
+        max-height: 1300px;
+        background-size: 3000px;
+    }
+    .container {
+        padding: 6rem 15rem;
+        @include setMaxwidth($lg) {
+            padding: 5rem 2rem;
+        }
+        @include setMaxwidth($md) {
+            max-width: none;
+            padding: 5rem;
+        }
+        @include setMaxwidth($sm) {
+            padding: 5rem 2rem;
+        }
+    }
+    &__heading {
+        text-align: center;
+    }
+    &__title {
+        @extend %title;
+        margin: 2rem 0;
+    }
+    &__border {
+        @extend %border;
+        margin: 2rem auto;
+    }
+    &__text {
+        @extend %text;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+    &__content {
+        padding: 2rem;
+        background: white;
+    }
+    &__form {
+        @include flex($direction: column, $align: left);
+    }
+    .input {
+        height: 4.3rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border: 1px solid $gray;
+        outline: none;
+    }
+    input::placeholder {
+        color: $titlecolor;
+        font-weight: 700;
+    }
+    .select {
+        appearance: none;
+        width: 100%;
+        padding: 1rem;
+        color: $titlecolor;
+        font-weight: 700;
+        border: 1px solid $gray;
+        z-index: 4;
+        cursor: pointer;
+        outline: 0;
+        height: 4.3rem;
+    }
+    .select-box {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    .select-icon {
+        font-size: 1.4rem;
+        color: $titlecolor;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-left: 1px solid $gray;
+        height: 100%;
+        pointer-events: none;
+        padding: 1.5rem;
+    }
+    .textarea {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 1px solid $gray;
+        outline: none;
+    }
+    textarea::placeholder {
+        color: $titlecolor;
+        font-weight: 700;
+    }
+    .btn {
+        width: 100%;
+        line-height: 3rem;
+        color: white;
+        background: $red;
+        font-size: 1.4rem;
+        font-family: $menufont;
+        letter-spacing: 2px;
+    }
+}

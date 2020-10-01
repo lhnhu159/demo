@@ -1,0 +1,53 @@
+.parallax-img1 {
+    height: 80vh;
+    background-image: url('/img/parallax_image_03-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: left top;
+    @include setMaxwidth($md) {
+        background-size: 1200px;
+    }
+    @include setMaxwidth($sm) {
+        height: 60vh;
+        background-size: 150%;
+    }
+    @include setMaxwidth($xsm) {
+        background-size: 900px;
+    }
+}
+
+.parallax2 {
+    height: 80vh;
+    background-image: url('/img/parallax_image_03-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 125%;
+    background-position: left top;
+    @include setMaxwidth($md) {
+        background-size: 1200px;
+    }
+    @include setMaxwidth($sm) {
+        height: 60vh;
+        background-size: 150%;
+    }
+    @include setMaxwidth($xsm) {
+        background-size: 900px;
+    }
+}
+
+.parallax3 {
+    height: 80vh;
+    background-image: url('/img/parallax_image_02-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-position: left top;
+    @include setMaxwidth($xl) {
+        background-size: 2000px;
+    }
+    @include setMaxwidth($md) {
+        background-size: 1200px;
+    }
+    @include setMaxwidth($sm) {
+        max-height: 60vh;
+        background-size: cover;
+    }
+}

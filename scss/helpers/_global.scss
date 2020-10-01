@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-weight: 100;
+}
+
+html {
+    font-size: 13px;
+    font-family: $primaryfont;
+}
+
+.content {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}

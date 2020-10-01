@@ -1,0 +1,221 @@
+.wedding {
+    padding: 8rem 0;
+    background-color: white;
+    @include setMaxwidth($xsm) {
+        padding: 8rem 2rem;
+    }
+    &__img {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    &__title {
+        @extend %title;
+        text-align: center;
+    }
+    &__border {
+        width: 15%;
+        border-bottom: 1px solid $bordercolor;
+        margin: 3rem auto;
+        margin-bottom: 4rem;
+    }
+    &__text {
+        font-size: 1.2rem;
+        margin-bottom: 5rem;
+        padding: 0 17rem;
+        line-height: 2.5rem;
+        text-align: center;
+        @include setMaxwidth($l900) {
+            padding: 0 3rem;
+        }
+        @include setMaxwidth($xsm) {
+            margin-bottom: 3rem;
+            padding: 0;
+        }
+    }
+    &__icon {
+        text-align: center;
+        font-size: 4.5rem;
+        color: $gray;
+        margin-bottom: 1rem;
+    }
+    &__time {
+        text-align: center;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        @include setMaxwidth($md) {
+            margin-bottom: 2rem;
+        }
+    }
+    .time {
+        background-color: $gray;
+        padding: 0.5rem 2rem;
+    }
+    &__wrapper {
+        padding: 0 5rem;
+        @include setMaxwidth($lg) {
+            padding: 0 1rem;
+        }
+        @include setMaxwidth($xsm) {
+            padding: 0;
+        }
+    }
+    .timeline {
+        position: relative;
+        @include flex($justify: center);
+        @include setMaxwidth($md) {
+            @include flex($direction: column);
+        }
+        &__content {
+            position: relative;
+            @include setMaxwidth($lg) {
+                max-width: 400px;
+            }
+            @include setMaxwidth($md) {
+                max-width: 600px;
+            }
+            @include setMaxwidth($xsm) {
+                width: 100%;
+            }
+            //dot left container
+            &:after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                right: -0.4rem;
+                background-color: $gray;
+                top: 23rem;
+                border-radius: 50%;
+                z-index: 1;
+                @include setMaxwidth($md) {
+                    display: none;
+                }
+            }
+        }
+        &__border {
+            width: 1px;
+            border-left: 1px solid $gray;
+            height: 800px;
+            transform: translateY(-50px);
+            @include setMaxwidth($md) {
+                display: none;
+            }
+        }
+        &__box {
+            position: relative;
+            border: 1px solid $gray;
+            border-bottom: 4px solid $gray;
+            margin: 0 8rem;
+            margin-bottom: 3rem;
+            //width: inherit;
+            @include setMaxwidth($breakPoint: 1200px) {
+                margin: 0 3rem;
+                margin-bottom: 5rem;
+            }
+            @include setMaxwidth($xsm) {
+                margin: 0;
+                margin-bottom: 5rem;
+            }
+        }
+    }
+    .img {
+        background-size: cover;
+    }
+    .icon {
+        @include flex($justify: center);
+        padding: 8rem 10rem;
+        background-color: rgba($color: $red, $alpha: 0.8);
+        opacity: 0;
+        transition: .3s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .link {
+        margin: 1rem;
+        font-size: 1.7rem;
+        color: rgba($color: white, $alpha: 0.8);
+        transition: .3s ease-in-out;
+        &:hover {
+            color: rgba($color: white, $alpha: 1.0);
+        }
+    }
+    .timeline1 {
+        background-image: url('../img/timeline_01-800x534.jpg');
+    }
+    .timeline2 {
+        background-image: url('../img/timeline_02-800x534.jpg');
+    }
+    .timeline3 {
+        background-image: url('../img/timeline_03-800x534.jpg');
+    }
+    .timeline4 {
+        background-image: url('../img/timeline_04-800x534.jpg');
+    }
+    //dot right container
+    .right::after {
+        left: -0.5rem;
+        top: 52.5rem;
+        @include setMaxwidth($breakPoint: 1200px) {
+            top: 54.3rem;
+        }
+        @include setMaxwidth($md) {
+            display: none;
+        }
+    }
+    //border timeline
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 800px;
+        background-color: $gray;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateY(-50px);
+        z-index: -1;
+        @include setMaxwidth($md) {
+            display: none;
+        }
+    }
+    .box-left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        bottom: 9%;
+        width: 0;
+        z-index: 1;
+        right: -10px;
+        border: medium solid $gray;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent $gray;
+        @include setMaxwidth($md) {
+            display: none;
+        }
+    }
+    .box-right::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        bottom: 9%;
+        width: 0;
+        z-index: 1;
+        left: -10px;
+        border: medium solid $gray;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent $gray transparent transparent;
+        @include setMaxwidth($md) {
+            display: none;
+        }
+    }
+    .title {
+        font-size: 1.7rem;
+        padding: 2rem;
+        color: $red;
+        line-height: 2.5rem;
+        @include setMaxwidth($xsm) {
+            text-align: center;
+        }
+    }
+}

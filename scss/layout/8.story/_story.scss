@@ -1,0 +1,65 @@
+.story {
+    background-color: white;
+    .container {
+        padding: 8rem 14rem;
+        @include setMaxwidth($lg) {
+            max-width: none;
+            padding: 8rem 5rem;
+        }
+        @include setMaxwidth($xsm) {
+            padding: 5rem 2rem;
+        }
+    }
+    &__rose {
+        text-align: center;
+    }
+    &__title {
+        @extend %title;
+        text-align: center;
+        margin: 3rem 0;
+    }
+    &__border {
+        @extend %border;
+        margin: 2rem auto;
+        margin-bottom: 3rem;
+    }
+    &__text {
+        color: $titlecolor;
+        text-align: center;
+        @extend %text;
+        font-style: italic;
+        margin-bottom: 6rem;
+    }
+    &__item {
+        @include grid($columns: auto auto, $columnGap: 2rem);
+        margin-bottom: 8rem;
+        @include setMaxwidth($sm) {
+            @include grid($rows: auto auto, $columns: unset);
+            margin-bottom: 2rem;
+        }
+    }
+    &__img {
+        display: none;
+    }
+    .circle1 {
+        display: block;
+        text-align: center;
+    }
+    .title {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        margin: 2rem 0;
+    }
+    .item-border {
+        @extend %border;
+        margin: 3rem 0;
+    }
+    .text {
+        @extend %text;
+        color: $titlecolor;
+    }
+    .circle {
+        border-radius: 50%;
+    }
+}

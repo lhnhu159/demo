@@ -1,0 +1,62 @@
+.special {
+    padding-bottom: 8rem;
+    background-color: white;
+    @include setMaxwidth($xl) {
+        padding: 3rem 2rem;
+    }
+    @include setMaxwidth($md) {
+        padding: 2rem;
+    }
+    .container {
+        padding: 3rem 2rem;
+        background-image: url('../img/countdown_bkgd.jpg');
+        @extend %bg-img;
+        @include flex($justify: space-between, $wrap: wrap);
+        @include setMaxwidth($md) {
+            @include flex($direction: column);
+        }
+        @include setMaxwidth($xl) {
+            max-width: none;
+            padding: 3rem;
+        }
+    }
+    &__content {
+        @include flex($justify: center, $wrap: wrap);
+    }
+    &__our {
+        color: white;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    &__date {
+        font-size: 1.4rem;
+        color: $special;
+        font-weight: 700;
+        @include setMaxwidth($md) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__time {
+        color: $titlecolor;
+        background: white;
+        font-size: 1.4rem;
+        padding: 0.5rem 2rem;
+        margin: 0 1rem;
+        border-radius: 4px;
+        text-align: center;
+        @include setMaxwidth($xl) {
+            @include flexitem($basis: 40%);
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+    }
+    &__now {
+        font-size: 1.4rem;
+        color: white;
+    }
+    &__right {
+        @include setMaxwidth($md) {
+            margin-top: 2rem;
+        }
+    }
+}

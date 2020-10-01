@@ -1,0 +1,46 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    @include setMaxwidth($xl) {
+        position: relative;
+    }
+}
+
+.header {
+    padding: 22rem 0;
+    text-align: center;
+    background-image: url('../img/home_slider.jpg');
+    @extend %bg-img;
+    color: white;
+    @include setMaxwidth($sm) {
+        max-height: 100vh;
+        padding: 6rem 2rem;
+    }
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+    }
+    &__text {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        line-height: 2.5rem;
+    }
+    .btn {
+        background: white;
+        border-radius: 2rem;
+        padding: 0.5rem 2rem;
+        color: $primarycolor;
+        transition: .3s ease-in-out;
+        &:hover {
+            background: none;
+            color: white;
+            border: 1px solid white;
+        }
+    }
+}
+
+.unstick {
+    position: relative!important;
+}

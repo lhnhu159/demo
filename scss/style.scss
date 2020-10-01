@@ -1,0 +1,42 @@
+/* ---- Import reset CSS ----- */
+
+@import "../scss/helpers/reset";
+
+/* ---- Utils ---- */
+
+@import "./helpers/variables";
+@import "./helpers/colors";
+@import "./helpers/shared";
+@import "./helpers/mixins";
+@import "./helpers/global";
+
+/* ---- Import styles for layout ---- */
+
+// 1.  Header
+@import "./layout/1.header/header";
+// 2.  Navbar
+@import "./layout/2.navbar/navbar";
+// 3.  Inviting
+@import "./layout/3.inviting/invititng";
+// 4. Parallax img 1
+@import "./layout/4.parallax/parallax";
+// 5.  Wedding
+@import "./layout/5.wedding/wedding";
+// 6.  Special
+@import "./layout/6.special/special";
+// 7.  Venue
+@import "./layout/7.venue/venue";
+// 8.  Story
+@import "./layout/8.story/story";
+// 9. Gallery
+@import "./layout/9.gallery/gallery";
+// 10.  Avada
+@import "./layout/10.avada/avada";
+// 11. Together
+@import "./layout/11.together/together";
+// 12.  Details
+@import "./layout/12.details/details";
+// 13. Formrv
+@import "./layout/13.formrv/formrv";
+// 14. Footer
+@import "./layout/14.footer/footer";

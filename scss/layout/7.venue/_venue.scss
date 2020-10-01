@@ -1,0 +1,35 @@
+.venue {
+    @include grid($columns: 60% 40%, $columnGap: 0);
+    @include setMaxwidth($md) {
+        @include grid($rows: 2fr 1fr, $columns: unset, $rowGap: 0);
+    }
+    color: white;
+    &__content {
+        padding: 6rem;
+        background: $primarycolor;
+        @include setMaxwidth($sm) {
+            padding: 6rem 2rem;
+        }
+    }
+    &__title {
+        @extend %title;
+        margin-top: 2rem;
+    }
+    &__border {
+        @extend %border;
+    }
+    &__italic {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        font-style: oblique;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+    }
+    &__right {
+        background-image: url('../img/post_06.jpg');
+        background-size: cover;
+    }
+}
